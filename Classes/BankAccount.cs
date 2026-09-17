@@ -1,4 +1,5 @@
-﻿public class Balance
+﻿// Här skriver jag en klass Balance som representerar ett bankkonto med insättningar och uttag. Klassen har metoder för att sätta in och ta ut pengar samt för att visa det aktuella saldot.
+public class Balance
 {
     private int Deposit;
 
@@ -10,25 +11,23 @@
         Withdraw = withdraw;
     }
 
-    // Getter: returns current deposit amount
+    // Kod för att sätta in pengar på kontot. Metoden tar ett belopp som parameter och lägger till det på Deposit. Samt koder för att ta ut pengar från kontot. Metoden tar ett belopp som parameter och lägger till det på Withdraw.
     public int DepositAmount()
     {
         return Deposit;
     }
 
-    // Overload: deposit an amount
     public void DepositAmount(int amount)
     {
         Deposit += amount;
     }
 
-    // Getter: returns current withdraw amount
     public int WithdrawAmount()
     {
         return Withdraw;
     }
 
-    // Overload: withdraw an amount
+    
     public void WithdrawAmount(int amount)
     {
         Withdraw += amount;
